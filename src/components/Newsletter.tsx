@@ -58,9 +58,9 @@ const ContactSection = () => {
             </p>
           </div>
           
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="flex flex-row justify-center items-center gap-12 w-full">
             {/* Contact Form */}
-            <div className="bg-gray-50 rounded-2xl p-8">
+            <div className="bg-gray-50 rounded-2xl p-8 w-full">
               <h3 className="text-2xl font-display font-bold mb-6">Send us a message</h3>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
@@ -92,7 +92,7 @@ const ContactSection = () => {
                   </div>
                 </div>
                 
-                <div>
+                {/* <div>
                   <label htmlFor="university" className="block text-sm font-medium text-gray-700 mb-2">University *</label>
                   <input 
                     type="text" 
@@ -104,7 +104,7 @@ const ContactSection = () => {
                     className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-ryde-500 text-gray-700" 
                     required 
                   />
-                </div>
+                </div> */}
                 
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">Message</label>
@@ -130,7 +130,7 @@ const ContactSection = () => {
             </div>
             
             {/* Contact Info & Resources */}
-            <div className="space-y-8">
+            {/* <div className="space-y-8">
               <div>
                 <h3 className="text-2xl font-display font-bold mb-6">Partnership Resources</h3>
                 <div className="space-y-4">
@@ -183,7 +183,7 @@ const ContactSection = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

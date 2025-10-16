@@ -25,15 +25,15 @@ const ProblemSolutionSection = () => {
             <div className="space-y-4">
               <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded-r-lg">
                 <p className="text-lg font-semibold text-red-800">One bike stolen every 30 seconds</p>
-                <p className="text-red-700">Nationwide bike theft statistics</p>
+                <p className="text-red-700">According to <a href="https://ucr.fbi.gov/crime-in-the-u.s/2019/crime-in-the-u.s.-2019/topic-pages/tables/table-7" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline' }}>FBI crime statistics</a></p>
               </div>
               <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded-r-lg">
                 <p className="text-lg font-semibold text-red-800">28.75% of UIUC students worried about theft</p>
-                <p className="text-red-700">Campus-specific security concerns</p>
+                <p className="text-red-700">Campuswide transportation survey</p>
               </div>
               <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded-r-lg">
                 <p className="text-lg font-semibold text-red-800">Inadequate campus bike security</p>
-                <p className="text-red-700">Traditional locks fail to protect students' transportation</p>
+                <p className="text-red-700">Traditional U-Locks can be easily broken through</p>
               </div>
             </div>
           </div>
@@ -60,9 +60,9 @@ const ProblemSolutionSection = () => {
         </div>
         
         {/* Before vs After Visual */}
-        <div className="bg-gray-50 rounded-2xl p-8">
+        {/* <div className="bg-gray-50 rounded-2xl p-8">
           <h3 className="text-2xl sm:text-3xl font-display font-bold text-center mb-8">
-            Before vs. After Campus Bike Racks
+          Before vs. After Campus Bike Rack Locks
           </h3>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="text-center">
@@ -80,7 +80,7 @@ const ProblemSolutionSection = () => {
               <div className="bg-green-100 rounded-lg p-6 mb-4">
                 <h4 className="text-xl font-semibold text-green-800 mb-2">After Rydelatch</h4>
                 <ul className="text-green-700 space-y-2 text-left">
-                  <li>• Smart, tamper-resistant locks</li>
+                  <li>• Weatherproof and break-in resistant smart locks</li>
                   <li>• Dramatically reduced theft</li>
                   <li>• Peace of mind for students</li>
                   <li>• Increased bike usage</li>
@@ -88,7 +88,7 @@ const ProblemSolutionSection = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

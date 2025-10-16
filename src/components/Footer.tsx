@@ -14,7 +14,7 @@ const Footer = () => {
               className="h-8 mb-4 invert" 
             />
             <p className="text-gray-300 mb-6 max-w-md">
-              Smart campus bike security solutions. Built by students, for students. 
+              Smart campus bike and scooter security. 
               We lock up so you don't have to.
             </p>
             <div className="flex space-x-4">

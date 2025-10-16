@@ -82,7 +82,7 @@ const PartnershipProcessSection = () => {
                   </div>
                   <div className="flex-1">
                     <div className="p-3 rounded-lg bg-gray-50/80 backdrop-blur-sm border border-gray-100">
-                      <span className="font-semibold text-base">Campus Analysis:</span> Theft & rack assessment
+                      <span className="font-semibold text-base">Campus Analysis:</span> We do a custom analysis of bike traffic on your university campus, seeing where the highly trafficked areas are, and where bikes are getting stolen the most.
                     </div>
                   </div>
                 </div>
@@ -93,7 +93,7 @@ const PartnershipProcessSection = () => {
                   </div>
                   <div className="flex-1">
                     <div className="p-3 rounded-lg bg-gray-50/80 backdrop-blur-sm border border-gray-100">
-                      <span className="font-semibold text-base">Custom Plan:</span> Deployment strategy
+                      <span className="font-semibold text-base">Custom Plan:</span> We then take this information and give you a custom plan that details where most units should be located, and where we recommend to install more U-Racks.
                     </div>
                   </div>
                 </div>
@@ -104,7 +104,7 @@ const PartnershipProcessSection = () => {
                   </div>
                   <div className="flex-1">
                     <div className="p-3 rounded-lg bg-gray-50/80 backdrop-blur-sm border border-gray-100">
-                      <span className="font-semibold text-base">Installation:</span> Integration & setup
+                      <span className="font-semibold text-base">Installation:</span> We install our products on campus, meticulously making sure there are no faults that will allow thieves to break in.
                     </div>
                   </div>
                 </div>
@@ -115,7 +115,7 @@ const PartnershipProcessSection = () => {
                   </div>
                   <div className="flex-1">
                     <div className="p-3 rounded-lg bg-gray-50/80 backdrop-blur-sm border border-gray-100">
-                      <span className="font-semibold text-base">Ongoing Support:</span> Maintenance & reporting
+                      <span className="font-semibold text-base">Ongoing Support:</span> We handle the maintenance of our products, giving you real-time reporting on what units are being used, and how any incidents are handled with our team.
                     </div>
                   </div>
                 </div>
@@ -141,8 +141,7 @@ const PartnershipProcessSection = () => {
             
             {/* Card Content - Form */}
             <div className="bg-white p-4 sm:p-8" style={{
-            backgroundColor: "#FFFFFF",
-            border: "1px solid #ECECEC"
+            backgroundColor: "#FFFFFF"
           }}>
               <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
                 <div>
@@ -197,7 +196,7 @@ const PartnershipProcessSection = () => {
                     type="submit" 
                     className="w-full px-6 py-3 bg-ryde-500 hover:bg-ryde-600 text-white font-medium rounded-full transition-colors duration-300"
                   >
-                    Start Partnership
+                    Send Inquiry
                   </button>
                 </div>
               </form>

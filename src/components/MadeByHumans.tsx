@@ -29,28 +29,41 @@ const TeamSection = () => {
         {/* Founding Story */}
         <div className="bg-gray-50 rounded-2xl p-8 mb-12">
           <h3 className="text-2xl font-display font-bold text-center mb-6">Our Founding Story</h3>
+
+          <div className="flex flex-row justify-center items-center">
+          <div className="text-center">
+            <div className="w-32 h-32 mx-auto mb-4 bg-gray-200 rounded-full flex items-center justify-center">
+              {/* <span className="text-2xl font-bold text-gray-500">ME</span> */}
+              <img src="/TEAM/cole.jpg" alt="Cole Phillips" className="w-full h-full object-cover rounded-full" />
+            </div>
+            <h4 className="font-semibold text-gray-900">Cole Phillips</h4>
+            <p className="text-gray-600 text-sm mb-2">CEO</p>
+          </div>
+          </div>
+
           <div className="max-w-4xl mx-auto">
             <p className="text-gray-700 text-lg leading-relaxed mb-6">
-              Rydelatch started as a student response to a real campus problem. After witnessing countless bike thefts and hearing fellow students express their concerns about bike security, we knew something had to be done. 
+            Hi, I’m Cole. I founded Ryde Latch after my bike was stolen just a few weeks into my time on campus. When I shared what happened, most people just shrugged because it was such a common issue. Some even said it was my fault for not having a safe enough lock. But getting your bike stolen should never be your fault. That experience sparked my mission to make bike safety simple, affordable, and built into the places we ride every day.
             </p>
             <p className="text-gray-700 text-lg leading-relaxed">
-              What began as a class project has evolved into a comprehensive solution that not only protects students' transportation but also creates a safer, more connected campus community. We're proud to be building something that makes our own campus a better place.
+            My team and I are proud to be building something that makes our own campus a better place.
             </p>
           </div>
         </div>
         
         {/* Team Members */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="text-center">
+        {/* <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"> */}
+        <div className="flex flex-row justify-center items-center">
+          {/* <div className="text-center">
             <div className="w-32 h-32 mx-auto mb-4 bg-gray-200 rounded-full flex items-center justify-center">
               {/* <span className="text-2xl font-bold text-gray-500">ME</span> */}
-              <img src="/TEAM/cole.JPG" alt="Cole Phillips" className="w-full h-full object-cover rounded-full" />
+              {/* <img src="/TEAM/cole.jpg" alt="Cole Phillips" className="w-full h-full object-cover rounded-full" />
             </div>
             <h4 className="font-semibold text-gray-900 mb-2">Cole Phillips</h4>
             <p className="text-gray-600 text-sm">CEO</p>
-          </div>
+          </div> */} 
           
-          <div className="text-center">
+          {/* <div className="text-center">
             <div className="w-32 h-32 mx-auto mb-4 bg-gray-200 rounded-full flex items-center justify-center">
               <span className="text-2xl font-bold text-gray-500">EE</span>
             </div>
@@ -72,11 +85,11 @@ const TeamSection = () => {
             </div>
             <h4 className="font-semibold text-gray-900 mb-2">Jameson Koonce</h4>
             <p className="text-gray-600 text-sm">Professional Leaderboard Topper</p>
-          </div>
+          </div> */}
         </div>
         
         {/* Campus Pride */}
-        <div className="mt-16 text-center">
+        <div className=" text-center">
           <div className="inline-flex items-center gap-3 bg-ryde-50 px-6 py-3 rounded-full">
             <div className="w-8 h-8 bg-ryde-500 rounded-full flex items-center justify-center">
               <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">

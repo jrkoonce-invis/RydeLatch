@@ -38,7 +38,7 @@ const FAQSection = () => {
   const faqs = [
     {
       question: "How does it work?",
-      answer: "Students unlock bikes using the mobile app (NFC) or a PIN pad. The system is integrated into campus bike racks and provides secure, convenient access."
+      answer: "Students unlock bikes by using our mobile app, and tapping their phone to the specific lock through NFC. The system is integrated into campus bike racks and provides secure, convenient access."
     },
     {
       question: "What if a lock breaks?",
