@@ -34,7 +34,7 @@ const TeamSection = () => {
           <div className="text-center">
             <div className="w-32 h-32 mx-auto mb-4 bg-gray-200 rounded-full flex items-center justify-center">
               {/* <span className="text-2xl font-bold text-gray-500">ME</span> */}
-              <img src="/TEAM/cole.jpg" alt="Cole Phillips" className="w-full h-full object-cover rounded-full" />
+              <img src="newassets/cole.jpg" alt="Cole Phillips" className="w-full h-full object-cover rounded-full" />
             </div>
             <h4 className="font-semibold text-gray-900">Cole Phillips</h4>
             <p className="text-gray-600 text-sm mb-2">CEO</p>
