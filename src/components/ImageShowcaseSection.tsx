@@ -37,7 +37,7 @@ const ProductTechSection = () => {
           <div className="rounded-2xl sm:rounded-3xl overflow-hidden shadow-elegant animate-on-scroll">
             <div className="w-full">
               <img 
-                src="public/newassets/Ryde Latch Scene Photo 5.png" 
+                src="public/newassets/Ryde Latch Scene Photo 5.jpg" 
                 alt="Rydelatch assembly and installation" 
                 className="w-full h-auto object-cover"
               />
