@@ -14,7 +14,45 @@ const ProductTechSection = () => {
             providing maximum security with seamless user experience.
           </p>
         </div>
-        
+
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="rounded-2xl sm:rounded-3xl overflow-hidden shadow-elegant animate-on-scroll">
+            <div className="w-full">
+              <img 
+                src="/newassets/RydeLatch Scene Photo.jpg" 
+                alt="Rydelatch smart bike lock system in action" 
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            <div className="bg-white p-4 sm:p-8">
+              <h3 className="text-xl sm:text-2xl font-display font-semibold mb-3 sm:mb-4">Smart Campus Security</h3>
+              <p className="text-gray-700 text-sm sm:text-base">
+                Our smart lock system integrates seamlessly into campus infrastructure, 
+                providing students with secure, convenient bike storage while giving 
+                universities peace of mind and valuable usage analytics.
+              </p>
+            </div>
+          </div>
+          
+          <div className="rounded-2xl sm:rounded-3xl overflow-hidden shadow-elegant animate-on-scroll">
+            <div className="w-full">
+              <img 
+                src="public/newassets/Ryde Latch Scene Photo 5.png" 
+                alt="Rydelatch assembly and installation" 
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            <div className="bg-white p-4 sm:p-8">
+              <h3 className="text-xl sm:text-2xl font-display font-semibold mb-3 sm:mb-4">Easy Installation</h3>
+              <p className="text-gray-700 text-sm sm:text-base">
+                Designed for quick and easy installation on existing campus bike racks, 
+                our smart locks can be deployed across your entire campus infrastructure 
+                with minimal disruption to student life.
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* Hardware Features */}
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           <div className="space-y-6">
@@ -137,26 +175,7 @@ const ProductTechSection = () => {
               </tbody>
             </table>
           </div>
-        </div>
-        
-        {/* Product Showcase */}
-        {/* <div className="rounded-2xl sm:rounded-3xl overflow-hidden shadow-elegant mx-auto max-w-4xl animate-on-scroll">
-          <div className="w-full">
-            <img 
-              src="/lovable-uploads/c3d5522b-6886-4b75-8ffc-d020016bb9c2.png" 
-              alt="Rydelatch smart bike lock system" 
-              className="w-full h-auto object-cover"
-            />
-          </div>
-          <div className="bg-white p-4 sm:p-8">
-            <h3 className="text-xl sm:text-2xl font-display font-semibold mb-3 sm:mb-4">Smart Campus Security</h3>
-            <p className="text-gray-700 text-sm sm:text-base">
-              Our smart lock system integrates seamlessly into campus infrastructure, 
-              providing students with secure, convenient bike storage while giving 
-              universities peace of mind and valuable usage analytics.
-            </p>
-          </div>
-        </div> */}
+        </div>        
       </div>
     </section>
   );

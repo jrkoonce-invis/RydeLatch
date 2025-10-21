@@ -6,7 +6,7 @@ import LottieAnimation from "./LottieAnimation";
 
 const Hero = () => {
   const containerRef = useRef<HTMLDivElement>(null);
-  const imageRef = useRef<HTMLImageElement>(null);
+  const imageRef = useRef<HTMLVideoElement>(null);
   const [lottieData, setLottieData] = useState<any>(null);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -180,14 +180,19 @@ const Hero = () => {
               <>
               <div className="absolute inset-0 bg-dark-900 rounded-2xl sm:rounded-3xl -z-10 shadow-xl"></div>
               <div className="relative transition-all duration-500 ease-out overflow-hidden rounded-2xl sm:rounded-3xl shadow-2xl">
-                <img 
+                <video 
                   ref={imageRef} 
-                  src="/hero-image.jpg" 
-                  alt="Atlas Robot" 
-                  className="w-full h-auto object-cover transition-transform duration-500 ease-out" 
+                  autoPlay 
+                  loop 
+                  muted 
+                  playsInline
+                  className="w-full aspect-square object-cover transition-transform duration-500 ease-out" 
                   style={{ transformStyle: 'preserve-3d' }} 
-                />
-                <div className="absolute inset-0" style={{ backgroundImage: 'url("/hero-image.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', mixBlendMode: 'overlay', opacity: 0.5 }}></div>
+                >
+                  <source src="/newassets/RydeLatch Video.mp4" type="video/mp4" />
+                  <img src="/hero-image.jpg" alt="Rydelatch Smart Lock" className="w-full h-auto object-cover" />
+                </video>
+                <div className="absolute inset-0 bg-black/20"></div>
               </div>
               </>
             )}

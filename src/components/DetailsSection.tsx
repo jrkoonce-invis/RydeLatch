@@ -1,6 +1,7 @@
 
 import React, { useState } from "react";
 import { toast } from "sonner";
+import { sendPartnershipEmail, PartnershipFormData } from "@/lib/simpleEmailService";
 const PartnershipProcessSection = () => {
   const [formData, setFormData] = useState({
     university: "",
@@ -18,7 +19,7 @@ const PartnershipProcessSection = () => {
       [name]: value
     }));
   };
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     // Simple validation
@@ -27,16 +28,23 @@ const PartnershipProcessSection = () => {
       return;
     }
 
-    // Demo form submission
-    toast.success("Partnership inquiry submitted successfully!");
-
-    // Reset form
-    setFormData({
-      university: "",
-      contactName: "",
-      email: "",
-      phone: ""
-    });
+    try {
+      const success = await sendPartnershipEmail(formData as PartnershipFormData);
+      
+      if (success) {
+        toast.success("Email client opened! Please send the email to complete your partnership inquiry.");
+        setFormData({
+          university: "",
+          contactName: "",
+          email: "",
+          phone: ""
+        });
+      } else {
+        toast.error("Error sending inquiry. Please try again or contact us directly at jamesonkoonce@gmail.com");
+      }
+    } catch (error) {
+      toast.error("Error sending inquiry. Please try again or contact us directly at jamesonkoonce@gmail.com");
+    }
   };
   return <section id="partnership" className="w-full bg-white py-0">
       <div className="container px-4 sm:px-6 lg:px-8 mx-auto">

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { toast } from "@/components/ui/use-toast";
+import { sendContactEmail, ContactFormData } from "@/lib/simpleEmailService";
 const ContactSection = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -17,9 +18,9 @@ const ContactSection = () => {
     }));
   };
   
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!formData.name || !formData.email || !formData.university) {
+    if (!formData.name || !formData.email) {
       toast({
         title: "Please fill in all required fields",
         variant: "destructive"
@@ -28,20 +29,36 @@ const ContactSection = () => {
     }
     setIsSubmitting(true);
 
-    // Simulate API call
-    setTimeout(() => {
+    try {
+      const success = await sendContactEmail(formData as ContactFormData);
+      
+      if (success) {
+        toast({
+          title: "Email client opened!",
+          description: "Please send the email to complete your inquiry."
+        });
+        setFormData({
+          name: "",
+          email: "",
+          university: "",
+          message: ""
+        });
+      } else {
+        toast({
+          title: "Error sending message",
+          description: "Please try again or contact us directly at jamesonkoonce@gmail.com",
+          variant: "destructive"
+        });
+      }
+    } catch (error) {
       toast({
-        title: "Thank you for your inquiry!",
-        description: "We'll get back to you within 24 hours."
+        title: "Error sending message",
+        description: "Please try again or contact us directly at jamesonkoonce@gmail.com",
+        variant: "destructive"
       });
-      setFormData({
-        name: "",
-        email: "",
-        university: "",
-        message: ""
-      });
+    } finally {
       setIsSubmitting(false);
-    }, 1000);
+    }
   };
   
   return <section id="contact" className="bg-white py-12 sm:py-16 md:py-20">
