@@ -25,6 +25,95 @@ const TeamSection = () => {
             Rydelatch was born from a real campus problem. As students ourselves, we understand the daily struggle of bike security and built a solution that works.
           </p>
         </div>
+
+        {/* Core Team Grid */}
+        <div className="mb-12">
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
+            {/* Ryan McCluskey */}
+            <div className="bg-gray-50 rounded-2xl p-6 flex flex-col h-full text-center items-center max-w-sm">
+              <div className="w-16 h-16 mb-4 rounded-full overflow-hidden bg-ryde-100 flex items-center justify-center">
+                <img src="/TEAM/201F16F1-A1EC-4B56-B604-17B8EF9C1C5F - Ryan M.JPG" alt="Ryan McCluskey" className="w-full h-full object-cover" />
+              </div>
+              <h3 className="font-display font-bold text-lg text-gray-900">Ryan McCluskey</h3>
+              <p className="text-sm text-gray-600 mb-2">Lead Mechanical Engineer</p>
+              <p className="text-sm text-gray-700 flex-1">
+                Ryan leads the mechanical engineering team to make a lock that&apos;s easy to use and optimized for the rider experience.
+              </p>
+            </div>
+
+            {/* Ali Albaghdadi */}
+            <div className="bg-gray-50 rounded-2xl p-6 flex flex-col h-full text-center items-center max-w-sm">
+              <div className="w-16 h-16 mb-4 rounded-full overflow-hidden bg-ryde-100 flex items-center justify-center">
+                <img src="/TEAM/_MG_4778 - Ali A..jpg" alt="Ali Albaghdadi" className="w-full h-full object-cover" />
+              </div>
+              <h3 className="font-display font-bold text-lg text-gray-900">Ali Albaghdadi</h3>
+              <p className="text-sm text-gray-600 mb-2">PCB Designer</p>
+              <p className="text-sm text-gray-700 flex-1">
+                Ali designs and produces the PCB, making sure the electronics perform well and scale smoothly into production.
+              </p>
+            </div>
+
+            {/* Jack Costello */}
+            <div className="bg-gray-50 rounded-2xl p-6 flex flex-col h-full text-center items-center max-w-sm">
+              <div className="w-16 h-16 mb-4 rounded-full overflow-hidden bg-ryde-100 flex items-center justify-center">
+                <img src="/TEAM/1000001011821271 - Jack Costello.jpg" alt="Jack Costello" className="w-full h-full object-cover" />
+              </div>
+              <h3 className="font-display font-bold text-lg text-gray-900">Jack Costello</h3>
+              <p className="text-sm text-gray-600 mb-2">Electrical Lead</p>
+              <p className="text-sm text-gray-700 flex-1">
+                Jack designs, tests, and integrates the electronic systems that power Ryde Latch, working across teams to keep everything reliable.
+              </p>
+            </div>
+
+            {/* Arnav Gupta */}
+            <div className="bg-gray-50 rounded-2xl p-6 flex flex-col h-full text-center items-center max-w-sm">
+              <div className="w-16 h-16 mb-4 rounded-full overflow-hidden bg-ryde-100 flex items-center justify-center">
+                <img src="/TEAM/IMG_5138 - Arnav Gupta.png" alt="Arnav Gupta" className="w-full h-full object-cover" />
+              </div>
+              <h3 className="font-display font-bold text-lg text-gray-900">Arnav Gupta</h3>
+              <p className="text-sm text-gray-600 mb-2">Electrical / Embedded Engineer</p>
+              <p className="text-sm text-gray-700 flex-1">
+                Arnav works on the physical electronics and prototypes, managing power draw and usability across the electronic systems.
+              </p>
+            </div>
+
+            {/* Aadishree Jain */}
+            <div className="bg-gray-50 rounded-2xl p-6 flex flex-col h-full text-center items-center max-w-sm">
+              <div className="w-16 h-16 mb-4 rounded-full overflow-hidden bg-ryde-100 flex items-center justify-center">
+                <img src="/TEAM/IMG_4200 - Aadishree Jain.PNG" alt="Aadishree Jain" className="w-full h-full object-cover" />
+              </div>
+              <h3 className="font-display font-bold text-lg text-gray-900">Aadishree Jain</h3>
+              <p className="text-sm text-gray-600 mb-2">Mechanical Product Design Partner</p>
+              <p className="text-sm text-gray-700 flex-1">
+                Aadishree leads user-focused physical design, redesigning CAD models to optimize layout, durability, and manufacturability.
+              </p>
+            </div>
+
+            {/* Ojas Shah */}
+            <div className="bg-gray-50 rounded-2xl p-6 flex flex-col h-full text-center items-center max-w-sm">
+              <div className="w-16 h-16 mb-4 rounded-full overflow-hidden bg-ryde-100 flex items-center justify-center">
+                <img src="/TEAM/Ojas Shah Headshot - Ojas Shah.jpg" alt="Ojas Shah" className="w-full h-full object-cover" />
+              </div>
+              <h3 className="font-display font-bold text-lg text-gray-900">Ojas Shah</h3>
+              <p className="text-sm text-gray-600 mb-2">App Development</p>
+              <p className="text-sm text-gray-700 flex-1">
+                Ojas is building the Ryde Latch app to enable remote access and a smooth user experience for students on campus.
+              </p>
+            </div>
+
+            {/* Marcus Lam */}
+            <div className="bg-gray-50 rounded-2xl p-6 flex flex-col h-full text-center items-center max-w-sm">
+              <div className="w-16 h-16 mb-4 rounded-full overflow-hidden bg-ryde-100 flex items-center justify-center">
+                <img src="/TEAM/new_headshot - Marcus Lam.jpg" alt="Marcus Lam" className="w-full h-full object-cover" />
+              </div>
+              <h3 className="font-display font-bold text-lg text-gray-900">Marcus Lam</h3>
+              <p className="text-sm text-gray-600 mb-2">Manufacturing &amp; Materials Partner</p>
+              <p className="text-sm text-gray-700 flex-1">
+                Marcus focuses on manufacturing, materials, and production logistics to bring Ryde Latch from prototype to campus-ready hardware.
+              </p>
+            </div>
+          </div>
+        </div>
         
         {/* Founding Story */}
         <div className="bg-gray-50 rounded-2xl p-8 mb-12">
